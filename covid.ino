@@ -54,7 +54,7 @@ void loop() {
       Serial.println("connection failed");
       return;
     }
-    url = "/coronavirus/country/US";
+    url = "/coronavirus/country/taiwan";
     client.print(String("GET ") + url + " HTTP/1.1\r\n" +
                  "Host: " + host + "\r\n" +
                  "Connection: close\r\n\r\n");
@@ -112,7 +112,7 @@ void loop() {
     client.stop();
  do {
       u8g2.setCursor(0,15);
-      u8g2.print("顯示美國COVID-19");
+      u8g2.print("顯示台灣COVID-19");
       u8g2.setCursor(0,30);
       u8g2.print("感染");
       u8g2.setCursor(50,30);
