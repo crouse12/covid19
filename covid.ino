@@ -23,7 +23,7 @@ int deaths=0;
 
 void setup() {
     Serial.begin(9600);
-    WiFi.begin("TP-LINK_34B518", "batman88");
+    WiFi.begin("TP-LINK_34B518", "ba");
     Serial.print("Connecting");
     while (WiFi.status() != WL_CONNECTED)
     {
